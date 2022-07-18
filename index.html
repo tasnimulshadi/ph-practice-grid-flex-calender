@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6fb1872aed.js" crossorigin="anonymous"></script>
+    <title>Calender 2022</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .calender-months {
+            width: 50%;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f9b093;
+            padding: 10px 0px;
+            border-radius: 5px;
+            font-size: 1.5em;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .calender-months i {
+            margin: 0 20px;
+            padding: 5px 10px;
+            border-radius: 50%;
+            background-color: lightgray;
+            font-size: 15px;
+            transition: transform .5s;
+        }
+
+        .calender-months i:hover {
+            transform: scale(1.3);
+            background-color: rgb(41, 41, 41);
+            color: white;
+        }
+
+        .calender {
+            width: 50%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 2fr repeat(6, 3fr);
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .date,
+        .day {
+            background-color: #facfd6;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.3em;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+            transition: transform .5s;
+        }
+
+        .day {
+            background-color: #8df6f1;
+            font-size: 1.2em;
+        }
+
+        .other-month {
+            background-color: lightgray;
+
+        }
+
+        .current-date {
+            background-color: #f9b093;
+        }
+
+        .date:hover,
+        .day:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="jul">
+        <div class="calender-months">
+            <a href="#jun"><i class="fa-solid fa-angle-left"></i></a>
+            <p>July 2022</p>
+            <a href="#aug"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">26</div>
+            <div class="date other-month">27</div>
+            <div class="date other-month">28</div>
+            <div class="date other-month">29</div>
+            <div class="date other-month">30</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date current-date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+        </div>
+    </section>
+
+    <section id="aug">
+        <div class="calender-months">
+            <a href="#jul"><i class="fa-solid fa-angle-left"></i></a>
+            <p>August 2022</p>
+            <a href="#sep"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+            <div class="date other-month">8</div>
+            <div class="date other-month">9</div>
+            <div class="date other-month">10</div>
+        </div>
+    </section>
+
+    <section id="sep">
+        <div class="calender-months">
+            <a href="#aug"><i class="fa-solid fa-angle-left"></i></a>
+            <p>September 2022</p>
+            <a href="#oct"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">28</div>
+            <div class="date other-month">29</div>
+            <div class="date other-month">30</div>
+            <div class="date other-month">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+            <div class="date other-month">8</div>
+        </div>
+    </section>
+
+    <section id="oct">
+        <div class="calender-months">
+            <a href="#sep"><i class="fa-solid fa-angle-left"></i></a>
+            <p>October 2022</p>
+            <a href="#nov"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">25</div>
+            <div class="date other-month">26</div>
+            <div class="date other-month">27</div>
+            <div class="date other-month">28</div>
+            <div class="date other-month">29</div>
+            <div class="date other-month">30</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+        </div>
+    </section>
+
+    <section id="nov">
+        <div class="calender-months">
+            <a href="#oct"><i class="fa-solid fa-angle-left"></i></a>
+            <p>November 2022</p>
+            <a href="#dec"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">30</div>
+            <div class="date other-month">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+            <div class="date other-month">8</div>
+            <div class="date other-month">9</div>
+            <div class="date other-month">10</div>
+        </div>
+    </section>
+
+    <section id="dec">
+        <div class="calender-months">
+            <a href="#nov"><i class="fa-solid fa-angle-left"></i></a>
+            <p>December 2022</p>
+            <a href="#jan"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">27</div>
+            <div class="date other-month">28</div>
+            <div class="date other-month">29</div>
+            <div class="date other-month">30</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+        </div>
+    </section>
+
+    <section id="jan">
+        <div class="calender-months">
+            <a href="#dec"><i class="fa-solid fa-angle-left"></i></a>
+            <p>January 2022</p>
+            <a href="#feb"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">26</div>
+            <div class="date other-month">27</div>
+            <div class="date other-month">28</div>
+            <div class="date other-month">29</div>
+            <div class="date other-month">30</div>
+            <div class="date other-month">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+        </div>
+    </section>
+
+    <section id="feb">
+        <div class="calender-months">
+            <a href="#jan"><i class="fa-solid fa-angle-left"></i></a>
+            <p>February 2022</p>
+            <a href="#mar"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">30</div>
+            <div class="date other-month">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+            <div class="date other-month">8</div>
+            <div class="date other-month">9</div>
+            <div class="date other-month">10</div>
+            <div class="date other-month">11</div>
+            <div class="date other-month">12</div>
+        </div>
+    </section>
+
+    <section id="mar">
+        <div class="calender-months">
+            <a href="#feb"><i class="fa-solid fa-angle-left"></i></a>
+            <p>March 2022</p>
+            <a href="#apr"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">27</div>
+            <div class="date other-month">28</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+            <div class="date other-month">8</div>
+            <div class="date other-month">9</div>
+        </div>
+    </section>
+
+    <section id="apr">
+        <div class="calender-months">
+            <a href="#mar"><i class="fa-solid fa-angle-left"></i></a>
+            <p>April 2022</p>
+            <a href="#may"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">27</div>
+            <div class="date other-month">28</div>
+            <div class="date other-month">29</div>
+            <div class="date other-month">30</div>
+            <div class="date other-month">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+        </div>
+    </section>
+
+    <section id="may">
+        <div class="calender-months">
+            <a href="#apr"><i class="fa-solid fa-angle-left"></i></a>
+            <p>May 2022</p>
+            <a href="#jun"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date">31</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+            <div class="date other-month">8</div>
+            <div class="date other-month">9</div>
+            <div class="date other-month">10</div>
+            <div class="date other-month">11</div>
+        </div>
+    </section>
+
+    <section id="jun">
+        <div class="calender-months">
+            <a href="#may"><i class="fa-solid fa-angle-left"></i></a>
+            <p>June 2022</p>
+            <a href="#jul"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="calender">
+            <div class="day">S</div>
+            <div class="day">M</div>
+            <div class="day">T</div>
+            <div class="day">W</div>
+            <div class="day">T</div>
+            <div class="day">F</div>
+            <div class="day">S</div>
+            <div class="date other-month">29</div>
+            <div class="date other-month">30</div>
+            <div class="date other-month">31</div>
+            <div class="date">1</div>
+            <div class="date">2</div>
+            <div class="date">3</div>
+            <div class="date">4</div>
+            <div class="date">5</div>
+            <div class="date">6</div>
+            <div class="date">7</div>
+            <div class="date">8</div>
+            <div class="date">9</div>
+            <div class="date">10</div>
+            <div class="date">11</div>
+            <div class="date">12</div>
+            <div class="date">13</div>
+            <div class="date">14</div>
+            <div class="date">15</div>
+            <div class="date">16</div>
+            <div class="date">17</div>
+            <div class="date">18</div>
+            <div class="date">19</div>
+            <div class="date">20</div>
+            <div class="date">21</div>
+            <div class="date">22</div>
+            <div class="date">23</div>
+            <div class="date">24</div>
+            <div class="date">25</div>
+            <div class="date">26</div>
+            <div class="date">27</div>
+            <div class="date">28</div>
+            <div class="date">29</div>
+            <div class="date">30</div>
+            <div class="date other-month">1</div>
+            <div class="date other-month">2</div>
+            <div class="date other-month">3</div>
+            <div class="date other-month">4</div>
+            <div class="date other-month">5</div>
+            <div class="date other-month">6</div>
+            <div class="date other-month">7</div>
+            <div class="date other-month">8</div>
+            <div class="date other-month">9</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
